@@ -251,6 +251,11 @@ img, .editorial-book-card, .text-line-wrapper, .course-row-item, .gallery-floati
     margin-top: 60px;
 }
 
+
+.home-header_story img, .hero-photo-box img {
+    object-fit: cover;
+    object-position: center;
+}
 /* =========================================================================
    PÁGINA PRINCIPAL
    ========================================================================= */
@@ -970,7 +975,7 @@ img, .editorial-book-card, .text-line-wrapper, .course-row-item, .gallery-floati
 .menu-overlay_links a:hover { opacity: 0.5; }
 
 /* =========================================================================
-   AJUSTES MOBILE E FINAIS
+   AJUSTES MOBILE 
    ========================================================================= */
 .service-list_container a.service-item_row:hover .book-row_title { opacity: 0.6; transform: translateX(6px); transition: all 0.3s ease; }
 .service-list_container a.service-item_row:hover .service-item_tag { opacity: 0.8; transition: all 0.3s ease; }
@@ -986,4 +991,64 @@ img, .editorial-book-card, .text-line-wrapper, .course-row-item, .gallery-floati
     .gallery-floating_item { width: 100% !important; height: 300px !important; }
     .gallery-floating_container { flex-direction: column; gap: 20px !important; }
     .service-item_row { flex-direction: column; align-items: flex-start; gap: 10px; }
+}
+
+@media (max-width: 768px) {
+    .section_home-header { padding-top: 100px; min-height: auto; }
+    .hero-title-large { font-size: 16vw !important; padding: 0 20px; }
+    .home-header_stories-trigger { height: auto; flex-direction: column; }
+    .hero-photo-box { height: 350px !important; }
+
+   
+    .section_cinematic-video { height: 60vh !important; }
+    .video-section_content { padding: 0 20px; text-align: center; }
+    .video-text_serif { font-size: 2.5rem !important; text-align: center !important; }
+    .video-text_sans { max-width: 100% !important; font-size: 1rem !important; }
+
+    
+    .books-editorial-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+    }
+    .editorial-book-card {
+        flex: 0 0 80%; 
+        scroll-snap-align: start;
+    }
+    
+
+    .course-row-item { grid-template-columns: 1fr !important; gap: 10px; }
+    .course-row-name { font-size: 1.6rem !important; }
+    .course-row-link { justify-self: start !important; }
+}
+
+/* =========================================================================
+    BOOK DETAILS
+   ========================================================================= */
+@media (max-width: 768px) {
+    .section_book-hero { 
+        padding: 100px 0 60px 0; 
+    }
+
+    .book-sticky-cover { 
+        height: 400px; 
+        border-radius: 12px; 
+    }
+
+    .book-meta-headline { 
+        font-size: 3.5rem; 
+        margin-bottom: 20px; 
+    }
+
+    .preview-chapter_box { 
+        padding: 25px; 
+        margin: 40px 0; 
+    }
+
+    .preview-text { 
+        font-size: 1.2rem; 
+    }
 }
