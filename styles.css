@@ -986,26 +986,58 @@ img, .editorial-book-card, .text-line-wrapper, .course-row-item, .gallery-floati
 .assinatura-nome { font-weight: 700; color: #b83321; }
 
 @media (max-width: 768px) {
-    .hero-title-large { font-size: 14vw; }
+    /* Ajustes Gerais */
+    .hero-title-large { font-size: 12vw !important; padding: 0 20px; }
     .footer_giant-text { font-size: 2.5rem; }
-    .gallery-floating_item { width: 100% !important; height: 300px !important; }
-    .gallery-floating_container { flex-direction: column; gap: 20px !important; }
     .service-item_row { flex-direction: column; align-items: flex-start; gap: 10px; }
-}
-
-@media (max-width: 768px) {
+    
+    /* Header & Hero */
     .section_home-header { padding-top: 100px; min-height: auto; }
-    .hero-title-large { font-size: 16vw !important; padding: 0 20px; }
     .home-header_stories-trigger { height: auto; flex-direction: column; }
     .hero-photo-box { height: 350px !important; }
 
+    /* Mosaico FEFICC */
+    /* Mosaico FEFICC - Ajustado para 2 colunas */
+    .section_home-gallery { padding: 60px 0 !important; }
+    
+    /* Título FEFICC chamativo */
+    .floating-mosaic_title[style*="font-size: 5rem"] { 
+        font-size: 3rem !important; 
+        color: #b83321 !important; 
+        margin-bottom: 20px !important; 
+    }
+
+    .home_gallery-mosaic { 
+        display: grid !important; 
+        grid-template-columns: repeat(2, 1fr) !important; 
+        gap: 15px !important; 
+    }
+    
+    .gallery_mosaic-item { 
+        width: 100% !important; 
+        height: 180px !important; 
+    }
+
    
+    .gallery_mosaic-item:last-child {
+        grid-column: span 2;
+        height: 250px !important;
+    }
+
+    .gallery_mosaic-item img { 
+        width: 100% !important; 
+        height: 100% !important; 
+        object-fit: cover !important; 
+        border-radius: 20px;
+    }
+
+    /* Vídeo */
     .section_cinematic-video { height: 60vh !important; }
     .video-section_content { padding: 0 20px; text-align: center; }
     .video-text_serif { font-size: 2.5rem !important; text-align: center !important; }
     .video-text_sans { max-width: 100% !important; font-size: 1rem !important; }
 
-    
+    /* Carrossel de Livros */
     .books-editorial-grid {
         display: flex;
         overflow-x: auto;
@@ -1015,40 +1047,21 @@ img, .editorial-book-card, .text-line-wrapper, .course-row-item, .gallery-floati
         margin-bottom: 40px;
     }
     .editorial-book-card {
-        flex: 0 0 80%; 
+        flex: 0 0 85%; 
         scroll-snap-align: start;
     }
-    
+    .book-desc-editorial { display: none !important; } 
+    .book-quote-overlay { display: none !important; } 
 
+    /* Mentoria */
     .course-row-item { grid-template-columns: 1fr !important; gap: 10px; }
     .course-row-name { font-size: 1.6rem !important; }
     .course-row-link { justify-self: start !important; }
-}
 
-/* =========================================================================
-    BOOK DETAILS
-   ========================================================================= */
-@media (max-width: 768px) {
-    .section_book-hero { 
-        padding: 100px 0 60px 0; 
-    }
-
-    .book-sticky-cover { 
-        height: 400px; 
-        border-radius: 12px; 
-    }
-
-    .book-meta-headline { 
-        font-size: 3.5rem; 
-        margin-bottom: 20px; 
-    }
-
-    .preview-chapter_box { 
-        padding: 25px; 
-        margin: 40px 0; 
-    }
-
-    .preview-text { 
-        font-size: 1.2rem; 
-    }
+    /* Book Details */
+    .section_book-hero { padding: 100px 0 60px 0; }
+    .book-sticky-cover { height: 400px; border-radius: 12px; }
+    .book-meta-headline { font-size: 3.5rem; margin-bottom: 20px; }
+    .preview-chapter_box { padding: 25px; margin: 40px 0; }
+    .preview-text { font-size: 1.2rem; }
 }
