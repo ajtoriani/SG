@@ -71,6 +71,23 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+gsap.fromTo(".elegant-quote .word", 
+    { opacity: 0, y: 20 }, 
+    { 
+        opacity: 1, 
+        y: 0, 
+        duration: 1, 
+        stagger: 0.15,
+        scrollTrigger: {
+            trigger: "#quote-section",
+            start: "top 85%", 
+            end: "bottom 60%",
+            scrub: 1,       
+            toggleActions: "play none none reverse"
+        }
+    }
+);
+
     // =========================================================================
     // 5. PARALLAX ASSIMÉTRICO: MOSAICO REDES SOCIAIS 
     // =========================================================================

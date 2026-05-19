@@ -571,6 +571,34 @@ img, .editorial-book-card, .text-line-wrapper, .course-row-item, .gallery-floati
     color: var(--text-muted);
 }
 
+.elegant-quote {
+    font-family: var(--font-serif); /* Mantém sua fonte serifada */
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.2;
+    position: relative;
+    padding: 0 40px;
+}
+
+.quote-symbol {
+    display: inline-block;
+    font-size: 6rem;
+    color: #db5c3d; 
+    line-height: 0;
+    vertical-align: middle;
+    margin: 0 10px;
+    font-family: serif;
+}
+
+@media (max-width: 768px) {
+    .quote-symbol {
+        font-size: 3rem;
+    }
+    .home-stories_text-giant {
+        font-size: 8vw !important;
+    }
+}
+
 /* =========================================================================
    SECTION 6
    ========================================================================= */
