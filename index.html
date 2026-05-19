@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Gusella — Escritora & Mentora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+<div class="menu-overlay-wrapper" id="menu-overlay">
+    <div class="menu-close_trigger" id="menu-close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </div>
+    <nav class="menu-overlay_nav">
+        <ul class="menu-overlay_links">
+            <li><a href="#catalogo" class="menu-link-item">Acervo Literário</a></li>
+            <li><a href="#cursos" class="menu-link-item">Formação Criativa</a></li>
+            <li><a href="#feficc" class="menu-link-item">FEFICC</a></li>
+            <li><a href="#rede-sociais" class="menu-link-item">Contato</a></li>
+        </ul>
+    </nav>
+</div>
+    <header class="navbar_component">
+        <a href="#" class="navbar_logo">Sara Gusella</a>
+        <div class="navbar_menu-custom">
+            <div>Menu</div>
+            <div class="menu_icon-lines"><span></span><span></span></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section_home-header">
+            <div class="container-default">
+                <div class="home-header_element">
+                    <h1 class="hero-title-large">
+                        <span class="text-line-wrapper">
+                            <span class="text-line-child">Histórias entre</span>
+                        </span>
+                        <span class="text-line-wrapper">
+                            <span class="text-line-child" id="hero-text"><em>fé, imaginação e eternidade.</em></span>
+                        </span>
+                    </h1>
+                    
+                    <div class="home-header_stories-trigger">
+                        <div class="hero-photo-box" id="hero-photo-primary">
+                            <img src="sarahero.jpg"alt="Sara Gusella Escritora" loading="eager">
+                        </div>
+                        <div class="hero-photo-box" id="hero-photo-secondary">
+                            <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1000&q=80" alt="Galáxias e Universo Especulativo" loading="eager">
+                        </div>
+                    </div>
+
+                    <div class="heading_hide">
+                        <div class="author_name_giant">Gusella</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="howkins-line"></div>
+
+        <section class="section_home-about">
+            <div class="container-default">
+                <div class="home-about_title-wrap">
+                    <h2>Sara Gusella escreve histórias para leitores que ainda acreditam que a ficção pode carregar esperança.</h2>
+                </div>
+                <div class="howkins-line"></div>
+                
+                <div class="home-about_info-grid">
+                    <div class="home-about_image_frame">
+                        <img src="saraabout.jpg" alt="Processo de Escrita" loading="lazy">
+                    </div>
+                    <div class="home-about_paragraph_box">
+                        <p>Mineira, sonhadora e apaixonada por mundos imaginários desde a infância, Sara começou a criar histórias ainda aos doze anos, mas foi durante a pandemia que decidiu finalmente transformar universos inteiros em livros.</p>
+                        <p>Entre fantasia épica, distopias espaciais e ficção cristã contemporânea, suas obras investigam redenção, sacrifício, identidade e eternidade através de personagens imperfeitos tentando encontrar significado em meio ao caos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="howkins-line"></div>
+
+        <section id="catalogo" class="section_feature-book">
+            <div class="container-default">
+                <span class="editorial-label">Mundos construídos para despertar esperança.</span>
+                
+                <h2 class="universe-title-group">Saga A Origem das Estações</h2>
+                <div class="books-editorial-grid">
+                    <a href="book-details.html?slug=a-escolha-do-verao" class="editorial-book-card">
+                        <div class="editorial-img-wrapper">
+                            <img src="https://m.media-amazon.com/images/I/81PsszOxDqL._SL1500_.jpg" alt="A Escolha do Verão" loading="lazy">
+                            <div class="book-quote-overlay">"Em uma vila que nunca conheceu o inverno, Beor parte em uma jornada para restaurar a estação perdida e descobrir verdades antigas escondidas além das florestas de Teith."</div>
+                        </div>
+                        <div class="book-meta-tags"><span>Alta Fantasia</span><span>Thomas Nelson Brasil</span></div>
+                        <h3 class="book-title-editorial">A Escolha do Verão</h3>
+                        <span class="editorial-action-link">Explorar Universo</span>
+                    </a>
+                    <a href="book-details.html?slug=a-esperanca-da-primavera" class="editorial-book-card">
+                        <div class="editorial-img-wrapper">
+                            <img src="https://m.media-amazon.com/images/I/81NTWf+Us3L._SL1500_.jpg" alt="A Esperança da Primavera" loading="lazy">
+                            <div class="book-quote-overlay">"Depois de um inverno devastador, o equilíbrio das Terras do Sol volta a ser ameaçado quando uma garota sem memórias surge misteriosamente no Palácio do Sol."</div>
+                        </div>
+                        <div class="book-meta-tags"><span>Alta Fantasia</span><span>Volume 2</span></div>
+                        <h3 class="book-title-editorial">A Esperança da Primavera</h3>
+                        <span class="editorial-action-link">Explorar Universo</span>
+                    </a>
+                    <a href="book-details.html?slug=o-orfao-da-cidade-escura" class="editorial-book-card">
+                        <div class="editorial-img-wrapper">
+                            <img src="https://m.media-amazon.com/images/I/618tLJl1TxL._SL1000_.jpg" alt="O Órfão da Cidade Escura" loading="lazy">
+                            <div class="book-quote-overlay">"Uma releitura da história do profeta Samuel através dos olhos de um órfão..."</div>
+                        </div>
+                        <div class="book-meta-tags"><span>Conto Extra</span><span>Edição Especial</span></div>
+                        <h3 class="book-title-editorial">O Órfão da Cidade Escura</h3>
+                        <span class="editorial-action-link">Explorar Universo</span>
+                    </a>
+                </div>
+
+                <h2 class="universe-title-group">Ficção Científica & Distopias</h2>
+                <div class="books-editorial-grid">
+                    <a href="book-details.html?slug=os-clas-da-lua" class="editorial-book-card">
+                        <div class="editorial-img-wrapper">
+                            <img src="https://m.media-amazon.com/images/I/815F42sCtXL._SL1500_.jpg" alt="Os Clãs da Lua" loading="lazy">
+                            <div class="book-quote-overlay">"Em um futuro onde a humanidade vive refugiada na Lua sob um império opressor, uma antiga promessa pode mudar completamente o destino de humanos e lunares."</div>
+                        </div>
+                        <div class="book-meta-tags"><span>Sci-Fi Cósmica</span><span>Thomas Nelson Brasil</span></div>
+                        <h3 class="book-title-editorial">Os Clãs da Lua</h3>
+                        <span class="editorial-action-link">Explorar Universo</span>
+                    </a>
+                    <a href="book-details.html?slug=o-fim-de-todas-as-marcas" class="editorial-book-card">
+                        <div class="editorial-img-wrapper">
+                            <img src="https://m.media-amazon.com/images/I/71CAnX9+qzL._SL1500_.jpg" alt="O Fim de Todas as Marcas" loading="lazy">
+                            <div class="book-quote-overlay">"Em um planeta onde pecados deixam marcas visíveis sobre a pele, duas almas quebradas descobrem que redenção pode custar tudo."</div>
+                        </div>
+                        <div class="book-meta-tags"><span>Ficção Planetária</span><span>Redenção</span></div>
+                        <h3 class="book-title-editorial">O Fim De Todas as Marcas</h3>
+                        <span class="editorial-action-link">Explorar Universo</span>
+                    </a>
+                    <a href="book-details.html?slug=godspeed-june" class="editorial-book-card">
+                        <div class="editorial-img-wrapper">
+                            <img src="https://m.media-amazon.com/images/I/81W-q-0MiJL._SL1500_.jpg" alt="Godspeed, June" loading="lazy">
+                            <div class="book-quote-overlay">"Uma viagem espacial solitária até o último planeta para um encontro com Deus..."</div>
+                        </div>
+                        <div class="book-meta-tags"><span>Ficção Curta</span><span>Espacial</span></div>
+                        <h3 class="book-title-editorial">Godspeed, June</h3>
+                        <span class="editorial-action-link">Explorar Universo</span>
+                    </a>
+                </div>
+
+                <h2 class="universe-title-group">Narrativas Independentes</h2>
+                <div class="books-editorial-grid">
+                    <a href="book-details.html?slug=desejos-em-guerra" class="editorial-book-card">
+                        <div class="editorial-img-wrapper">
+                            <img src="https://m.media-amazon.com/images/I/71UscXlQLlL._SL1500_.jpg" alt="Desejos em Guerra" loading="lazy">
+                            <div class="book-quote-overlay">"Duas nações divididas por uma antiga traição entram em conflito enquanto sentimentos improváveis florescem no centro da guerra."</div>
+                        </div>
+                        <div class="book-meta-tags"><span>Drama Épico</span><span>Guerra & Romance</span></div>
+                        <h3 class="book-title-editorial">Desejos em Guerra</h3>
+                        <span class="editorial-action-link">Explorar Universo</span>
+                    </a>
+                    <a href="book-details.html?slug=parque-fallacie" class="editorial-book-card">
+                        <div class="editorial-img-wrapper">
+                            <img src="https://m.media-amazon.com/images/I/81pDApSxU6L._SL1500_.jpg" alt="Parque Fallacie" loading="lazy">
+                            <div class="book-quote-overlay">"Um parque impossível força seus visitantes a confrontarem medos, memórias e as partes mais profundas de si mesmos."</div>
+                        </div>
+                        <div class="book-meta-tags"><span>Ficção Fantástica</span><span>Suspense</span></div>
+                        <h3 class="book-title-editorial">Parque Fallacie</h3>
+                        <span class="editorial-action-link">Explorar Universo</span>
+                    </a>
+                    <a href="book-details.html?slug=o-jogador-que-viajou-no-tempo" class="editorial-book-card">
+                        <div class="editorial-img-wrapper">
+                            <img src="https://m.media-amazon.com/images/I/712JmcGzdNL._SL1200_.jpg" alt="O Jogador que Viajou no Tempo" loading="lazy">
+                            <div class="book-quote-overlay">"Uma história sobre escolhas, arrependimentos e o peso de tentar alterar aquilo que já aconteceu."</div>
+                        </div>
+                        <div class="book-meta-tags"><span>Ficção Temporal</span><span>Esportes</span></div>
+                        <h3 class="book-title-editorial">O Jogador que Viajou no Tempo</h3>
+                        <span class="editorial-action-link">Explorar Universo</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_home-stories">
+            <div class="container-default">
+                <h2 class="home-stories_text-giant">"Acredito que a imaginação também pode ser redimida."</h2>
+            </div>
+        </section>
+<section id="feficc" class="section_home-gallery">
+            <div class="container-default">
+                <span class="editorial-label">Uma geração inteira voltando a acreditar na ficção cristã.</span>
+                <h2 class="hero-title-large" style="font-size: 5rem; margin-bottom: 20px;">FEFICC</h2>
+                <p style="max-width: 650px; font-weight:300; color:var(--text-muted); font-size:1.15rem; margin-bottom:40px;">
+                    Idealizada por Sara Gusella, a FEFICC nasceu do desejo de criar um espaço onde leitores cristãos encontrassem histórias alinhadas à fé sem abrir mão da criatividade, profundidade e imaginação. Hoje, a feira reúne milhares de leitores, autores e editoras em um dos maiores movimentos de ficção cristã contemporânea do Brasil.
+                </p>
+
+                <div style="display: flex; gap: 20px; margin-bottom: 50px; flex-wrap: wrap;">
+                    <a href="https://www.instagram.com/feficc.feira/" target="_blank" rel="noopener" class="howkins-btn-round" style="border: 1px solid var(--text-dark); color: var(--text-dark); background: transparent;">Instagram FEFICC ↗</a>
+                    <a href="https://feficc.com.br/" target="_blank" rel="noopener" class="howkins-btn-round" style="border: 1px solid var(--text-dark); color: var(--text-dark); background: transparent;">Site Oficial ↗</a>
+                </div>
+                
+                <div class="home_gallery-mosaic">
+                    <div class="gallery_mosaic-item"><img src="todos.png" alt="Palco FEFICC Evento"></div>
+                    <div class="gallery_mosaic-item"><img src="feficc.jpg" alt="Plateia Palestra"></div>
+                    <div class="gallery_mosaic-item"><img src="feficccompleto.png" alt="Feira de Livros"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_cinematic-video">
+            <video class="video-automation_file" autoplay loop muted playsinline>
+                <source src="movie.mp4" type="video/mp4">
+            </video>
+            <div class="video-section_overlay"></div>
+            <div class="container-default video-section_content">
+                <h2 class="video-text_serif">Histórias podem reacender a<br>Esperança.</h2>
+                <p class="video-text_sans">A ficção sempre foi capaz de alcançar lugares onde discursos comuns não chegam.
+Por isso, Sara acredita em histórias que despertam imaginação, restauram significado e apontam novamente para a eternidade.</p>
+            </div>
+        </section>
+
+        <section id="cursos" class="courses-section-brutal">
+            <div class="container-default">
+                <span class="editorial-label">Cursos para escritores que desejam transformar imaginação em mundos vivos.</span>
+                <h2 class="hero-title-large" style="font-size: 5rem; color: #fbfbfa; margin-bottom: 40px;">Formação Criativa</h2>
+                
+                <div class="course-table-list">
+                    <div class="course-row-item">
+                        <span class="course-row-id">[01]</span>
+                        <h3 class="course-row-name">O Grimório</h3>
+                        <a href="mentoria.html" class="course-row-link">Saber Mais</a>
+                    </div>
+                    <div class="course-row-item">
+                        <span class="course-row-id">[02]</span>
+                        <h3 class="course-row-name">Escrevendo Romantasia</h3>
+                        <a href="mentoria.html" class="course-row-link">Saber Mais</a>
+                    </div>
+                    <div class="course-row-item">
+                        <span class="course-row-id">[03]</span>
+                        <h3 class="course-row-name">Workshop Criações Fantásticas</h3>
+                        <a href="mentoria.html" class="course-row-link">Saber Mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section_floating-mosaic" id="redes-sociais" style="padding-top: 100px; padding-bottom: 140px;">
+            <div class="container-default">
+                <span class="editorial-label">Redes Sociais</span>
+                <h2 class="floating-mosaic_title" style="margin-bottom: 20px;">Histórias continuam existindo
+mesmo depois da última página.</h2>
+                <p style="max-width: 650px; font-weight:300; color:var(--text-muted); font-size:1.15rem; margin: 0 auto 60px auto;">
+                   Acompanhe os bastidores de escrita, reflexões sobre ficção cristã, construção de mundos, anúncios da FEFICC e o processo criativo por trás de cada universo.
+                </p>
+                
+               <div class="gallery-floating_container" style="margin-bottom: 60px; gap: 40px;">
+                    <div class="gallery-floating_item" id="social-float-left" style="width: 400px; height: 500px;">
+                        <img src="rs1.jpg" alt="Processo Criativo">
+                    </div>
+                    <div class="gallery-floating_item" id="social-float-right" style="width: 500px; height: 400px; margin-top: 100px;">
+                        <img src="rs2.jpg" alt="Sara Gusella Conexão">
+                    </div>
+                </div>
+
+                <div class="service-list_container" style="margin-top: 40px; text-align: left;">
+                    
+                    <a href="https://www.instagram.com/saragusella/" target="_blank" rel="noopener" class="service-item_row" style="text-decoration: none; color: inherit; display: flex;">
+                        <h3 class="book-row_title" style="font-size: 2rem;">Instagram</h3>
+                        <span class="service-item_tag">@saragusella ↗</span>
+                    </a>
+
+                    <a href="https://linktr.ee/saragusellaescritora?utm_source=linktree_profile_share&ltsid=4136dbb5-4f39-49a8-9e06-ea6bde6e9bb6" target="_blank" rel="noopener" class="service-item_row" style="text-decoration: none; color: inherit; display: flex;">
+                        <h3 class="book-row_title" style="font-size: 2rem;">Linktree</h3>
+                        <span class="service-item_tag">Todos os Links Úteis ↗</span>
+                    </a>
+
+                    <a href="https://www.amazon.com.br/stores/Sara-Gusella/author/B0922XXBBC?ref=ap_rdr&shoppingPortalEnabled=true" target="_blank" rel="noopener" class="service-item_row" style="text-decoration: none; color: inherit; display: flex;">
+                        <h3 class="book-row_title" style="font-size: 2rem;">Amazon</h3>
+                        <span class="service-item_tag">Meus E-books na Amazon↗</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="section_footer">
+            <div class="container-default">
+                <div class="footer_main-layout">
+                    <h2 class="footer_giant-text">A imaginação também pode carregar esperança.</h2>
+                    <ul class="footer_links-stack">
+                        <li><a href="https://www.instagram.com/saragusella/" target="_blank">Instagram Oficial →</a></li>
+                        <li><a href="https://thomasnelson.com.br/collections/livros-de-sara-gusella?srsltid=AfmBOopkSMgbFpuqwZSe6NeAgQNAhoncEiGToL9a3iXBi2vLIW1GGT3A">Thomas Nelson Brasil →</a></li>
+                        <li><a href="https://www.amazon.com.br/stores/Sara-Gusella/author/B0922XXBBC?ref=ap_rdr&shoppingPortalEnabled=true">Amazon →</a></li>
+                    </ul>
+                </div>
+                <div class="footer_bottom-bar">
+                    <span>© 2026 Sara Gusella</span>
+                    <br>
+                      <a href="https://ajwebstudio.vercel.app/" target="_blank" class="assinatura-aj">
+            <span class="assinatura-txt">Desenvolvido por</span>
+            <span class="assinatura-nome">AJ Web Studio</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--blue-light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

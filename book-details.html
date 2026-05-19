@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Gusella — Detalhes da Obra</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="books-data.js" defer></script>
+    <script src="book-details.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar_component">
+        <a href="index.html" class="navbar_logo">Sara Gusella</a>
+        <a href="index.html" class="navbar_menu-custom" style="text-decoration:none; color:inherit;">Voltar</a>
+    </header>
+
+    <main class="container-default">
+        <section class="section_book-hero">
+            <div class="book-hero_grid">
+                
+                <div class="book-sticky-cover" id="cover-frame">
+                    <img id="dynamic-cover" src="" alt="Capa da Obra">
+                </div>
+                
+                <div class="book-details_content">
+                    <span class="editorial-label" id="dynamic-genre">Gênero / Categoria</span>
+                    <h1 class="book-meta-headline" id="dynamic-title">Carregando...</h1>
+                    
+                    <div class="howkins-line" style="margin-bottom: 30px;"></div>
+                    
+                    <p class="book-extended-desc" id="dynamic-desc">Buscando sinopse oficial da obra...</p>
+                    
+                    <a href="#" id="dynamic-amazon-link" target="_blank" class="howkins-btn-round" style="display: inline-block; text-decoration: none;">Comprar Edição Física ou Kindle →</a>
+                    
+                    <div class="preview-chapter_box">
+                        <span class="editorial-label" style="margin-bottom: 10px;">Citação em Destaque</span>
+                        <p class="preview-text" id="dynamic-quote">"..."</p>
+                    </div>
+
+                    <div class="technical-specs-box">
+                        <span class="editorial-label" style="margin-bottom: 15px;">Ficha Técnica</span>
+                        <div class="spec-item"><strong>Editora:</strong> <span id="dynamic-publisher">—</span></div>
+                        <div class="spec-item"><strong>Classificação:</strong> <span id="dynamic-volume">—</span></div>
+                        <div class="spec-item"><strong>Tags / Conceitos:</strong> <span id="dynamic-specs">—</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="footer_bottom-bar">
+            <span>© 2026 Sara Gusella</span>
+            <span>Estilo Editorial Premium</span>
+        </div>
+    </main>
+</body>
+</html>
